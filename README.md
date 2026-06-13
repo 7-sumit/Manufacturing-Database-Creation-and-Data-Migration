@@ -11,22 +11,22 @@ Current Issue: In Excel, a production order might list a machine and raw materia
 Current Issue: Our data suffers from inconsistencies, such as material grades being entered as "SS-304" in one row  and "Stainless 304" in another, measurement metrics are Kg for now and KG for some rows.
 
 ## Data Description
-⦁	SupplierID, SupplierName: Identifies the company that provides the raw materials.
-⦁	RawMaterialBatchID: A unique identifier for a specific delivery of a raw material.
-⦁	MaterialName, MaterialGrade: Describes the type and quality of the raw material (e.g., "PVC Pellets", "Type 1").
-⦁	InitialQuantity, Unit: The amount of material received in a specific batch and its unit of measure (e.g., "KG", "m", "pcs").
-⦁	ReceiveDate: The date the raw material batch was received.
-⦁	MachineID, MachineName, MachineType: Identifies the specific piece of equipment used for a production run. The MachineName often contains a plant identifier (e.g., "P1-...").
-⦁	LastMaintenanceDate: The last recorded service date for the machine.
-⦁	CustomerOrderID, CustomerName: Identifies the external customer order that triggered the production.
-⦁	OrderDate: The date the customer placed the order.
-⦁	ProductionOrderID: This is the central "work order" or job number. (P1-25-1001, P1_25_1002, 1005)  P1, P2 indicates the plant that produces the order.
-⦁	ComponentToProduce, QuantityToProduce: Specifies what product is being made and in what quantity for this specific job.
-⦁	ScheduledStart, ScheduledEnd: The planned start and end times for the production job.
-⦁	Status: The current state of the production order (e.g., "Scheduled", "Completed", "On Hold").
-⦁	MaterialUsedBatchID, QuantityUsed: Records which batch of raw material was consumed for the production order and how much was used.
-⦁	QualityCheckID: An identifier for the quality inspection.
-⦁	CheckTimestamp, Result, InspectorName: Records when the quality check was performed, whether the component "Passed" or "Failed", and who performed the inspection.
+1. SupplierID, SupplierName: Identifies the company that provides the raw materials.
+2. RawMaterialBatchID: A unique identifier for a specific delivery of a raw material.
+3. MaterialName, MaterialGrade: Describes the type and quality of the raw material (e.g., "PVC Pellets", "Type 1").
+4. InitialQuantity, Unit: The amount of material received in a specific batch and its unit of measure (e.g., "KG", "m", "pcs").
+5. ReceiveDate: The date the raw material batch was received.
+6. MachineID, MachineName, MachineType: Identifies the specific piece of equipment used for a production run. The MachineName often contains a plant identifier (e.g., "P1-...").
+7. LastMaintenanceDate: The last recorded service date for the machine.
+8. CustomerOrderID, CustomerName: Identifies the external customer order that triggered the production.
+9. OrderDate: The date the customer placed the order.
+10. ProductionOrderID: This is the central "work order" or job number. (P1-25-1001, P1_25_1002, 1005)  P1, P2 indicates the plant that produces the order.
+11. ComponentToProduce, QuantityToProduce: Specifies what product is being made and in what quantity for this specific job.
+12. ScheduledStart, ScheduledEnd: The planned start and end times for the production job.
+13. Status: The current state of the production order (e.g., "Scheduled", "Completed", "On Hold").
+14. MaterialUsedBatchID, QuantityUsed: Records which batch of raw material was consumed for the production order and how much was used.
+15. QualityCheckID: An identifier for the quality inspection.
+16. CheckTimestamp, Result, InspectorName: Records when the quality check was performed, whether the component "Passed" or "Failed", and who performed the inspection.
 
 ## Project Summary
 1. Manufacturing Data Cleaning and Validation
